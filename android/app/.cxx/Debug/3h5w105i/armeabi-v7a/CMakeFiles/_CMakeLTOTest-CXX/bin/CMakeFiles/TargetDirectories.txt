@@ -1,0 +1,4 @@
+/Users/rohitpuri/Documents/ExpenseTrackerApp/android/app/.cxx/Debug/3h5w105i/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
+/Users/rohitpuri/Documents/ExpenseTrackerApp/android/app/.cxx/Debug/3h5w105i/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
+/Users/rohitpuri/Documents/ExpenseTrackerApp/android/app/.cxx/Debug/3h5w105i/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/edit_cache.dir
+/Users/rohitpuri/Documents/ExpenseTrackerApp/android/app/.cxx/Debug/3h5w105i/armeabi-v7a/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rebuild_cache.dir
