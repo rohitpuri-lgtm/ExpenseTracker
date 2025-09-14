@@ -1,97 +1,79 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 💰 Expense Tracker App
 
-# Getting Started
+A React Native app to track your expenses using a local database (SQLite or Realm), visualize them with charts, and backup/restore data.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+# 🎯 Objective
 
-## Step 1: Start Metro
+Build an expense tracking application that:
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+Allows adding new expense entries with category and amount
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Stores data locally using SQLite or Realm
 
-```sh
-# Using npm
-npm start
+Displays a pie chart of expenses by category
 
-# OR using Yarn
-yarn start
-```
+Provides backup and restore functionality via the file system
 
-## Step 2: Build and run your app
+✅ Features
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+✅ Add new expenses with category, amount, and timestamp
 
-### Android
+✅ Store data in a local database (SQLite or Realm)
 
-```sh
-# Using npm
-npm run android
+✅ Visualize expenses by category using a pie chart
 
-# OR using Yarn
-yarn android
-```
+✅ Backup database to the file system
 
-### iOS
+✅ Restore database from a backup file
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+✅ Structured data handling and performance optimizations
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+# ⚡ Concepts Covered
 
-```sh
-bundle install
-```
+Local database integration (SQLite or Realm)
 
-Then, and every time you update your native dependencies, run:
+Charts visualization (react-native-chart-kit or similar)
 
-```sh
-bundle exec pod install
-```
+File-based backup and restore (react-native-fs)
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+Efficient data management and retrieval
 
-```sh
-# Using npm
-npm run ios
+State management and performance optimization
 
-# OR using Yarn
-yarn ios
-```
+# 🚀 Setup & Installation
+1️⃣ Prerequisites
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+Node.js (Recommended ≥16.x)
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+React Native CLI (without Expo)
 
-## Step 3: Modify your app
+Android Studio or Xcode
 
-Now that you have successfully run the app, let's make changes!
+2️⃣ Clone the Repository
+git clone https://github.com/yourusername/expense-tracker-app.git
+cd expense-tracker-app
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+3️⃣ Install Dependencies
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+npm install
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
 
-## Congratulations! :tada:
+Or with yarn:
 
-You've successfully run and modified your React Native App. :partying_face:
+yarn install
 
-### Now what?
+4️⃣ Link Native Modules (if using SQLite/Realm/Fs)
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+npx react-native link react-native-sqlite-storage
+npx react-native link react-native-fs
 
-# Troubleshooting
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Follow manual installation instructions if required by the library.
 
-# Learn More
+5️⃣ Run on Android
+npx react-native run-android
 
-To learn more about React Native, take a look at the following resources:
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Or run on iOS:
+
+npx react-native run-ios
